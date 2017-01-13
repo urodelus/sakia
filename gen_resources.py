@@ -27,11 +27,7 @@ def build_resources():
                 elif f.endswith('.qrc'):
                     source = os.path.join(root, f)
                     dest = os.path.join(gen_resources, os.path.splitext(os.path.basename(source))[0]+'_rc.py')
-
-                    if sys.platform.startswith('win'):
-                        exe = 'pyrcc'
-                    else:
-                        exe = 'pyrcc5'
+                    exe = 'pyrcc5'
                 else:
                     continue
                 print(source + " >> " + dest)
