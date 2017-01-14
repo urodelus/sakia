@@ -11,10 +11,11 @@ then
 fi
 
 cd $HOME/build/duniter/sakia
+export PYTHONPATH=$HOME/build/duniter/sakia/src
 pyenv shell $PYENV_PYTHON_VERSION
 if [ $TRAVIS_OS_NAME == "linux" ]
 then
-    coverage run --source=sakia.core,sakia.gui,sakia.models py.test
+    py.test --cov=sakia tests/
 else
     py.test
 fi
