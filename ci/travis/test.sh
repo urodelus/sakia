@@ -11,7 +11,6 @@ then
 fi
 
 cd $HOME/build/duniter/sakia
-export PYTHONPATH=$HOME/build/duniter/sakia/src
 pyenv shell $PYENV_PYTHON_VERSION
 if [ $TRAVIS_OS_NAME == "linux" ]
 then

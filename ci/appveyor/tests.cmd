@@ -12,9 +12,6 @@ pyrcc5 -version
 lrelease -version
 
 echo "%cd%"
-set PYTHONPATH="%CD%\src"
-dir %PYTHONPATH%
-echo "%PYTHONPATH%"
 py.test tests/
 
 if %errorlevel% neq 0 exit /b 1
