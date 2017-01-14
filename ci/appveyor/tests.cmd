@@ -11,8 +11,8 @@ pyrcc5 -version
 
 lrelease -version
 
-echo "%CWD%"
-set PYTHONPATH="%PYTHONPATH%;%CWD%\src"
+echo "%cd%"
+set PYTHONPATH="%PYTHONPATH%;%CD%\src"
 echo "%PYTHONPATH%"
 py.test tests/
 
