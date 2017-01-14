@@ -8,7 +8,6 @@ python -V
 
 lrelease -version
 
-pip install PyQt5
 call pyuic5 --version
 pyrcc5 -version
 
